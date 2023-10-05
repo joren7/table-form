@@ -1,0 +1,120 @@
+*{
+    margin: 20px;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    
+
+}
+h1{
+    font-size: 90px;
+    color: transparent;
+    -webkit-text-stroke: 3px #0f00e2;
+
+}
+p{
+    font-family: sans-serif;
+}
+li{
+    list-style-image: url("star-solid-24.png") ;
+}
+body{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: aquamarine;
+}
+table{
+    max-width: 900px;
+    box-shadow: -1px 12px 12px -6px rgba(0,0,0,0.5);
+}
+table, td, th {
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+    text-align: center;
+    cursor: pointer;
+}
+td {
+    font-size: 18px;
+}
+th{
+    background-color: blue;
+    color: white;	 
+}
+tr:nth-child(even) {
+    background-color: #ededed;
+}
+tr:nth-child(even):hover {
+    background-color: lightseagreen;
+    color: rgb(8, 8, 8);
+    transform: scale(1.5);
+    transition: transform 300ms ease-in;
+}
+tr:nth-child(odd) {
+    background-color: lightblue;
+}
+tr:nth-child(odd):hover {
+    background-color: dodgerblue;
+    color: white;
+    transform: scale(1.5);
+    transition: transform 300ms ease-in;
+}
+tr.head th:first-child {
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    border-top-left-radius: 5px;
+}
+
+tr.head th:last-child {
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-right-radius: 5px;
+}
+fieldset {
+    width: 450px;
+    margin-top: 20px;
+    border: 1px solid #000000;
+    background-color: rgb(78, 129, 246);
+    border-radius: 20px;
+ 
+}
+legend {
+    font-style: italic;
+    color:black;
+}
+input[type="text"] {
+    width: 120px;
+    border: 1px solid #000000;
+    padding: 4px;
+    outline: none;
+}
+input[type="text"]:focus,
+	input[type="text"]:hover {
+		background-color: skyblue;
+		border: 1px solid green;
+	}
+        input[type="submit"] {
+		 margin: 4px 4px 4px 24px;
+         width: 100px;
+         padding: 5px;
+         font-size: 16px;
+         font-weight: 600;
+         font-family: sans-serif;
+         border-radius: 3px;
+         background-color: rgb(0, 255, 0);
+         color: #030303;
+         cursor: pointer;
+         border: 1px solid rgb(17, 0, 255);
+         box-shadow: rgb(1, 168, 235);
+	}
+    input[type="submit"]:hover {
+		border: 1px solid #660000;
+		background-color: #fc0303;
+		color: #ffffff;
+		cursor: pointer;
+	}
+	.submit {
+		width: auto;
+		text-align: right;
+	}
